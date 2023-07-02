@@ -31,14 +31,7 @@ resource "azurerm_resource_group" "rgdemo" {
 }
 
 module "storage-account" {
-  source  = "claranet/storage-account/azurerm"
-  version = "7.7.0"
-  # insert the 7 required variables here
-  resource_group_name =azurerm_resource_group.rgdemo.name
-  client_name ="karunakarstoragedmodfg"
-  environment ="dev"
-  location =var.location
-  location_short ="eastus"
-  logs_destinations_ids =[]
-  stack ="demo"
+  source  = "Umanis/storage-account/azurerm"
+  version = "2.0.0"
+  # insert the 4 required variables here
 }
