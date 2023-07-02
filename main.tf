@@ -19,7 +19,7 @@ provider "azurerm" {
   features {}
 }
 
-resource "azurerm_resource_group" "rg" {
+resource "azurerm_resource_group" "rgdemo" {
   name     = var.rg_name
   location = var.location
   tags = {
