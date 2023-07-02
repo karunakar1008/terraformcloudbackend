@@ -20,12 +20,12 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "rg-nextops-vedios-demo2"
+  name     = var.rg_name
   location = var.location
   tags = {
     "environment" = "dev",
-    "createdby"   = "karunakar",
-    "location"    = "east us"
+    "createdby"   = var.created_by,
+    "location"    = var.location
   }
 
 }
