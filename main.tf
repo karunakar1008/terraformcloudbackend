@@ -27,5 +27,4 @@ resource "azurerm_resource_group" "rgdemo" {
     "createdby"   = var.created_by,
     "location"    = var.location
   }
-
 }
