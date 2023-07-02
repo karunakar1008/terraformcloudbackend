@@ -40,5 +40,5 @@ module "storage-account" {
   location =var.location
   location_short ="eastus"
   logs_destinations_ids =[]
-  stack =""
+  stack ="demo"
 }
