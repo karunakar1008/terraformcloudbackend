@@ -5,13 +5,13 @@ terraform {
       version = "3.46.0"
     }
   }
-#   backend "remote" {
-#     hostname = "app.terraform.io"
-#     organization = "karunakar1008organization"
-#     workspaces {
-#       name = "ws_dev_terraformcloudbackend"
-#     }
-#   }
+  backend "remote" {
+    hostname = "app.terraform.io"
+    organization = "karunakar1008organization"
+    workspaces {
+      name = "ws_dev_terraformcloudbackend"
+    }
+  }
 }
 
 # Authenticate using azure CLI
