@@ -29,9 +29,3 @@ resource "azurerm_resource_group" "rgdemo" {
   }
 
 }
-
-module "storage-account" {
-  source  = "Umanis/storage-account/azurerm"
-  version = "2.0.0"
-  # insert the 4 required variables here
-}
